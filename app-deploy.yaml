@@ -1,0 +1,30 @@
+apiVersion: appsody.dev/v1beta1
+kind: AppsodyApplication
+metadata:
+  name: nodejs-demo
+spec:
+  # Add fields here
+  version: 1.0.0
+  applicationImage: cp4appspe/nodejs-demo:v1
+  stack: nodejs-express
+  service:
+    type: NodePort
+    port: 3000
+    annotations:
+      prometheus.io/scrape: 'true'
+  readinessProbe:
+    failureThreshold: 12
+    httpGet:
+      path: /ready
+      port: 3000
+    initialDelaySeconds: 5
+    periodSeconds: 2
+    timeoutSeconds: 1
+  livenessProbe:
+    failureThreshold: 12
+    httpGet:
+      path: /live
+      port: 3000
+    initialDelaySeconds: 5
+    periodSeconds: 2
+  expose: true
