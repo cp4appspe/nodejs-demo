@@ -1,0 +1,69 @@
+{
+  "id": 0,
+  "time": {
+    "data": {
+      "start": 1572219681382,
+      "end": 1572219703135
+    },
+    "units": {
+      "start": "UNIX time (ms)",
+      "end": "UNIX time (ms)"
+    }
+  },
+  "cpu": {
+    "data": {
+      "systemMean": 0.6812670000000001,
+      "systemPeak": 0.847097,
+      "processMean": 0.21887642857142858,
+      "processPeak": 0.291304
+    },
+    "units": {
+      "systemMean": "decimal fraction",
+      "systemPeak": "decimal fraction",
+      "processMean": "decimal fraction",
+      "processPeak": "decimal fraction"
+    }
+  },
+  "gc": {
+    "data": {
+      "gcTime": 0.0016176840963248542
+    },
+    "units": {
+      "gcTime": "decimal fraction"
+    }
+  },
+  "memory": {
+    "data": {
+      "usedHeapAfterGCPeak": 21988792,
+      "usedNativePeak": 3988398080
+    },
+    "units": {
+      "usedHeapAfterGCPeak": "bytes",
+      "usedNativePeak": "bytes"
+    }
+  },
+  "httpUrls": {
+    "data": [
+      {
+        "url": "/",
+        "method": "GET",
+        "hits": 1954,
+        "averageResponseTime": 2.21080416837257,
+        "longestResponseTime": 25.134476
+      },
+      {
+        "url": "/health",
+        "method": "GET",
+        "hits": 2,
+        "averageResponseTime": 0.696639,
+        "longestResponseTime": 0.728478
+      }
+    ],
+    "units": {
+      "averageResponseTime": "ms",
+      "longestResponseTime": "ms",
+      "hits": "count"
+    }
+  },
+  "desc": "test01"
+}
