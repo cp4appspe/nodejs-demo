@@ -5,7 +5,7 @@ metadata:
 spec:
   # Add fields here
   version: 1.0.0
-  applicationImage: cp4appspe/nodejs-demo:v1
+  applicationImage: quay.io/cp4appspe/nodejs-demo:v4
   stack: nodejs-express
   service:
     type: NodePort
