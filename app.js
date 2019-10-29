@@ -1,7 +1,7 @@
 const app = require('express')()
 
 app.get('/', (req, res) => {
-  res.send("Hello from Kabanero Enterprise version 0.1.2 & CP4A!");
+  res.send("My first Node.js with Kabanero!");
 });
  
 module.exports.app = app;
